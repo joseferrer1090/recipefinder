@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import SearchRecipe from "./components/SearchRecipe";
+import RecipeList from "./components/RecipeList";
 import "./styles/index.css";
 
 class App extends Component {
@@ -8,6 +9,7 @@ class App extends Component {
       <div>
         <h2> Recipe Finder </h2>
         <SearchRecipe />
+        <RecipeList />
       </div>
     );
   }

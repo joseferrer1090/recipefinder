@@ -27,7 +27,7 @@ class SearchRecipe extends Component {
     })
       .then(response => response.json())
       .then(json => {
-        console.log("this.props", setRecipes(json.results));
+        console.log(setRecipes(json.results));
       });
   }
 
@@ -67,6 +67,22 @@ class SearchRecipe extends Component {
     );
   }
 }
+
+/*
+
+function mapStateTopProps(state){
+  retunr{
+    recipes: state.recipe
+  }
+}
+
+  function mapDispatchToProps(dispatch){
+    return{
+      setRecipes()
+    }
+  }
+
+*/
 
 export default connect(
   null,
